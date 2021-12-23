@@ -21,6 +21,7 @@ kotlin {
     js(IR) {
         browser()
     }
+    jvm()
     sourceSets {
         val commonMain by getting
         val commonTest by getting {
@@ -47,6 +48,12 @@ kotlin {
             }
         }
         val jsTest by getting
+        val jvmMain by getting {
+            dependencies {
+                implementation(compose.desktop.currentOs)
+            }
+        }
+        val jvmTest by getting
     }
 }
 
