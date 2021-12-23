@@ -3,6 +3,7 @@ import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget
 plugins {
     id("com.android.library")
     kotlin("multiplatform")
+    id("org.jetbrains.compose") version "1.0.1"
 }
 
 group = "com.example"
@@ -16,6 +17,9 @@ kotlin {
                 baseName = "shared"
             }
         }
+    }
+    js(IR) {
+        browser()
     }
     sourceSets {
         val commonMain by getting
@@ -36,6 +40,13 @@ kotlin {
         }
         val iosMain by getting
         val iosTest by getting
+        val jsMain by getting {
+            dependencies {
+                implementation(compose.web.core)
+                implementation(compose.runtime)
+            }
+        }
+        val jsTest by getting
     }
 }
 
