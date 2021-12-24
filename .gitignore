@@ -32,3 +32,6 @@ local.properties
 # Intellij
 *.iml
 .idea/
+
+# JS
+kotlin-js-store/
