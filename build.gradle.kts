@@ -11,10 +11,10 @@ buildscript {
     }
 }
 
-group = "com.example"
-version = "1.0"
-
 allprojects {
+    group = "com.example"
+    version = "1.0"
+
     repositories {
         google()
         mavenCentral()

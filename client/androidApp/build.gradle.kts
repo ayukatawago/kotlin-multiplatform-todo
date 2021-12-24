@@ -1,16 +1,12 @@
 plugins {
     id("com.android.application")
+    id("org.jetbrains.compose") version "1.0.1"
     kotlin("android")
 }
 
-group = "com.example"
-version = "1.0"
-
 dependencies {
-    implementation(project(":client:shared"))
-    implementation("com.google.android.material:material:1.4.0")
-    implementation("androidx.appcompat:appcompat:1.4.0")
-    implementation("androidx.constraintlayout:constraintlayout:2.1.2")
+    implementation(project(":client:compose"))
+    implementation("androidx.activity:activity-compose:1.4.0")
 }
 
 android {
