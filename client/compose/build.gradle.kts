@@ -31,6 +31,7 @@ kotlin {
             dependencies {
                 api("androidx.appcompat:appcompat:1.4.0")
                 api("androidx.core:core-ktx:1.7.0")
+                api("androidx.compose.ui:ui-tooling:1.0.5")
             }
         }
         val androidTest by getting {
@@ -58,4 +59,16 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+    buildFeatures {
+        compose = true
+    }
+    composeOptions {
+        kotlinCompilerVersion = "1.6.10"
+        kotlinCompilerExtensionVersion = "1.0.5"
+    }
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
 }
