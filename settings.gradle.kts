@@ -7,11 +7,8 @@ pluginManagement {
 }
 rootProject.name = "kotlin-multiplatform-todo"
 
-include(":androidApp")
-project(":androidApp").projectDir = file("client/androidApp")
-include(":jsApp")
-project(":jsApp").projectDir = file("client/jsApp")
-include(":desktopApp")
-project(":desktopApp").projectDir = file("client/desktopApp")
-include(":shared")
-project(":shared").projectDir = file("client/shared")
+include(":client:androidApp")
+include(":client:jsApp")
+include(":client:desktopApp")
+include(":client:compose")
+include(":client:shared")
