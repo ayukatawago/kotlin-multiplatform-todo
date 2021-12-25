@@ -65,5 +65,10 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 11
+      - name: Run Xcodegen
+        uses: xavierLowmiller/xcodegen-action@1.1.2
+        with:
+          spec: client/iosApp/project.yml
+          version: '2.25.0'
       - name: Run xcodebuild
         run: xcodebuild -workspace client/iosApp/iosApp.xcodeproj/project.xcworkspace/ -scheme iosApp -destination 'name=iPhone 11' build
