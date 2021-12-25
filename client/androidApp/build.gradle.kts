@@ -2,6 +2,7 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.compose") version "1.0.1"
     kotlin("android")
+    id("org.jlleitschuh.gradle.ktlint")
 }
 
 dependencies {

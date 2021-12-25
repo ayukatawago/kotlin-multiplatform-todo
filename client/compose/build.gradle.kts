@@ -4,6 +4,7 @@ plugins {
     kotlin("multiplatform")
     id("org.jetbrains.compose") version "1.0.1"
     id("com.android.library")
+    id("org.jlleitschuh.gradle.ktlint")
 }
 
 kotlin {
@@ -71,4 +72,7 @@ android {
 java {
     sourceCompatibility = JavaVersion.VERSION_11
     targetCompatibility = JavaVersion.VERSION_11
+}
+dependencies {
+    implementation("androidx.compose:compose-runtime:0.1.0-dev14")
 }

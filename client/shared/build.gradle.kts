@@ -5,6 +5,7 @@ plugins {
     id("com.android.library")
     kotlin("multiplatform")
     id("org.jetbrains.compose") version "1.0.1"
+    id("org.jlleitschuh.gradle.ktlint")
 }
 
 group = "com.example"
