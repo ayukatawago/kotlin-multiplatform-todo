@@ -8,9 +8,6 @@ plugins {
     id("org.jlleitschuh.gradle.ktlint")
 }
 
-group = "com.example"
-version = "1.0"
-
 kotlin {
     android()
     ios {

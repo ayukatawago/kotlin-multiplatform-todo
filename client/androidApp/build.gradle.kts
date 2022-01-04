@@ -13,7 +13,7 @@ dependencies {
 android {
     compileSdkVersion(31)
     defaultConfig {
-        applicationId = "com.example.androidApp"
+        applicationId = "dev.kotodo.androidApp"
         minSdkVersion(24)
         targetSdkVersion(31)
         versionCode = 1
