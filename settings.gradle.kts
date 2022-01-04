@@ -5,7 +5,7 @@ pluginManagement {
         mavenCentral()
     }
 }
-rootProject.name = "kotlin-multiplatform-todo"
+rootProject.name = "kotodo"
 
 include(":client:androidApp")
 include(":client:jsApp")
