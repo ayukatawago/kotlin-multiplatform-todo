@@ -13,7 +13,7 @@ buildscript {
 }
 
 allprojects {
-    group = "dev.kotodo"
+    group = "com.ayukatawago.kotodo"
     version = "1.0"
 
     repositories {
