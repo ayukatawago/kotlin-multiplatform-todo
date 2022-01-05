@@ -1,7 +1,7 @@
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
-import dev.kotodo.shared.Platform
+import com.ayukatawago.kotodo.shared.Platform
 import org.jetbrains.compose.web.css.padding
 import org.jetbrains.compose.web.css.px
 import org.jetbrains.compose.web.dom.Button
